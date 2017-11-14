@@ -971,6 +971,10 @@ Usage (In Ghost editor):
     .post-full-content:after {
         display: none;
     }
+    .post-full-content p {
+        word-break: break-word;
+    }
+
 }
 
 /* Tables */
@@ -1932,11 +1936,11 @@ Usage (In Ghost editor):
     }
 
     .gh-homevideo-container:before {
-        content: "";
-        z-index: 100;
-        display: block;
-        background: radial-gradient(circle farthest-corner at right bottom,#55bbf1 0,#39afef 100%);
-        opacity: .94;
+        /*content: "";*/
+        /*z-index: 100;*/
+        /*display: block;*/
+        /*background: radial-gradient(circle farthest-corner at right bottom,#55bbf1 0,#39afef 100%);*/
+        /*opacity: .94;*/
     }
 
     .gh-homevideo {
