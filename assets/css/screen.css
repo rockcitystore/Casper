@@ -805,11 +805,11 @@ Usage (In Ghost editor):
     overflow-x: auto;
     margin: 1.5em 0 3em;
     padding: 20px;
-    border: color(var(--codegrey) l(-10%)) 1px solid;
+    border: color(var(--codegrey) l(-3%)) 1px solid;
     color: var(--whitegrey);
     font-size: 1.4rem;
     line-height: 1.5em;
-    background: color(var(--codegrey) l(-3%));
+    background: color(var(--codegrey));
     border-radius: 5px;
 }
 
