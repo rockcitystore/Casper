@@ -20,7 +20,7 @@ production stylesheet in assets/built/screen.css
 9.  Error Template
 10. Subscribe Overlay
 11. Site Footer
-
+12. Home
 */
 
 
@@ -111,7 +111,7 @@ body {
     padding-bottom: 12px;
     color: #fff;
     background: color(var(--darkgrey) l(-5%)) no-repeat center center;
-    background-size: cover;
+    /*background-size: cover;*/
 }
 
 .site-header:before {
@@ -1906,4 +1906,41 @@ Usage (In Ghost editor):
     .site-footer-nav a:first-child {
         margin-left: 0;
     }
+}
+
+
+
+
+/* 5. Site Navigation
+/* ---------------------------------------------------------- */
+
+
+.gh-homevideo-container {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 225%;
+}
+
+.gh-homevideo, .gh-homevideo-container:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.gh-homevideo-container:before {
+    content: "";
+    z-index: 100;
+    display: block;
+    background: radial-gradient(circle farthest-corner at right bottom,#55bbf1 0,#39afef 100%);
+    opacity: .94;
+}
+
+.gh-homevideo {
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
 }
