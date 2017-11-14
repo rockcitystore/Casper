@@ -1914,33 +1914,34 @@ Usage (In Ghost editor):
 /* 5. Site Navigation
 /* ---------------------------------------------------------- */
 
+@media screen and (device-aspect-ratio: 16/9), screen and (device-aspect-ratio: 16/10) , screen and (device-aspect-ratio: 4/3) {
+    .gh-homevideo-container {
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 225%;
+    }
 
-.gh-homevideo-container {
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 225%;
-}
+    .gh-homevideo, .gh-homevideo-container:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
 
-.gh-homevideo, .gh-homevideo-container:before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
+    .gh-homevideo-container:before {
+        content: "";
+        z-index: 100;
+        display: block;
+        background: radial-gradient(circle farthest-corner at right bottom,#55bbf1 0,#39afef 100%);
+        opacity: .94;
+    }
 
-.gh-homevideo-container:before {
-    content: "";
-    z-index: 100;
-    display: block;
-    background: radial-gradient(circle farthest-corner at right bottom,#55bbf1 0,#39afef 100%);
-    opacity: .94;
-}
-
-.gh-homevideo {
-    margin: auto;
-    min-width: 50%;
-    min-height: 50%;
+    .gh-homevideo {
+        margin: auto;
+        min-width: 50%;
+        min-height: 50%;
+    }
 }

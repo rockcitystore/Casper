@@ -4,7 +4,8 @@ into the {body} of the default.hbs template --}}
 
 {{!-- The big featured header, it uses blog cover image as a BG if available --}}
 <header class="site-header outer {{#if @blog.cover_image}}" style="background-image: url({{@blog.cover_image}}){{else}}no-cover{{/if}}">
-    
+
+{{#if isPC}}
     <div class="gh-homevideo-container" style="
     position: absolute;
     top: -50%;
@@ -16,6 +17,7 @@ into the {body} of the default.hbs template --}}
             <source src="https://streams.ghost.org/reporters.mp4" type="video/mp4">
         </video>
     </div>
+{{/if}}
 
     <div class="inner">
         <div class="site-header-content">
@@ -47,3 +49,10 @@ into the {body} of the default.hbs template --}}
 
     </div>
 </main>
+
+<script>
+    var md = new MobileDetect(window.navigator.userAgent);
+    var isPC = !md.mobile()
+    console.log(md)
+    console.log(md.mobile())
+</script>
