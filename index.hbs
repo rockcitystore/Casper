@@ -50,6 +50,8 @@ into the {body} of the default.hbs template --}}
     </div>
 </main>
 
+{{!-- mobile-detect --}}
+<script src="{{asset "js/mobile-detect.js"}}"></script>
 <script>
     var md = new MobileDetect(window.navigator.userAgent);
     var isPC = !md.mobile()
