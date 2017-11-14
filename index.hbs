@@ -55,5 +55,8 @@ into the {body} of the default.hbs template --}}
 <script>
     var md = new MobileDetect(window.navigator.userAgent);
     var isPC = !md.mobile()
-    if(isPC) $('.gh-homevideo-container').show()
+    if(isPC) {
+      $('.site-header.outer').css('background-image','')
+      $('.gh-homevideo-container').show()
+    }
 </script>
